@@ -41,22 +41,22 @@ body {
 
 /* Hero Section */
 .hero {
-    background: url('../images/ChatGPT\ Image\ 8\ jul\ 2025\,\ 08_02_36\ p.m..png') no-repeat center/cover;
-    height: 80vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    color: rgb(0, 0, 0);
+    background: url('../images/heroimagenggss.png') no-repeat center/cover;
+    height: 70vh;
 }
 
-.hero h1 {
+.mensajeyboton {
+    text-align: center;
+    color: #000000;
+    padding: 2rem;
+}
+
+.mensajeyboton h1 {
     font-size: 3rem;
     margin-bottom: 1rem;
 }
 
-.hero p {
+.mensajeyboton p {
     font-size: 1.5rem;
     margin-bottom: 2rem;
 }
@@ -79,14 +79,4 @@ body {
     color: white;
     text-align: center;
     padding: 1.5rem;
-}
-
-/* Responsive */
-@media (max-width: 768px) {
-    .nav-links {
-        display: none;
-    }
-    .hamburger {
-        display: block;
-    }
 }
