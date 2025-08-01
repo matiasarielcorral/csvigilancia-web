@@ -17,14 +17,14 @@ body {
     padding: 1rem 2rem;
 }
 
+.logo img {
+    height: 50px;
+}
+
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-
-.logo img {
-    height: 50px;
 }
 
 .nav-links {
@@ -33,10 +33,19 @@ body {
     gap: 2rem;
 }
 
+
 .nav-links a {
     color: white;
     text-decoration: none;
     font-weight: bold;
+    padding: 10px 20px;
+    margin: 0 10px;
+    border: 2x solid transparent;
+    transition: border 0.1s, color 0.1s;
+}
+
+.nav-links a:hover {
+    border-bottom: 2px solid white;
 }
 
 /* Hero Section */
@@ -48,6 +57,7 @@ body {
 .mensajeyboton {
     text-align: center;
     color: #000000;
+
     padding: 2rem;
 }
 
