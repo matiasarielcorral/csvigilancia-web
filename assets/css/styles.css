@@ -1,9 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+
+
 /* Reset básico */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Arial', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
 body {
@@ -45,7 +48,7 @@ body {
 }
 
 .nav-links a:hover {
-    border-bottom: 2px solid white;
+    border-bottom: 2px solid #f0b429;
 }
 
 /* Hero Section */
@@ -57,7 +60,6 @@ body {
 .mensajeyboton {
     text-align: center;
     color: #000000;
-
     padding: 2rem;
 }
 
@@ -72,7 +74,7 @@ body {
 }
 
 .btn {
-    background: #ff6b00;
+    background: #f0b429;
     color: white;
     padding: 0.8rem 2rem;
     border-radius: 5px;
@@ -80,7 +82,7 @@ body {
     font-weight: bold;
 }
 .btn:hover{
-    background-color: rgb(4, 171, 248);
+    background-color: #d99a1b;
 }
 
 /* Footer */
@@ -90,3 +92,95 @@ body {
     text-align: center;
     padding: 1.5rem;
 }
+
+/* contacto.html */
+.contact-section {
+    padding: 50px 20px;
+    background-color: #111;
+    color: #fff;
+}
+
+.contact-container {
+    display: flex;
+    gap: 40px;
+    max-width: 1100px;
+    margin: auto;
+    flex-wrap: wrap;
+}
+
+.contact-form, .contact-info {
+    flex: 1;
+    min-width: 300px;
+}
+
+.contact-form h2, .contact-info h2 {
+    margin-bottom: 20px;
+    color: #fff;
+    border-bottom: 2px solid #f0b429;
+    padding-bottom: 5px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.form-group input, 
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    outline: none;
+}
+
+.btn-submit {
+    background-color: #f0b429;
+    color: #111;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color .3s;
+}
+
+.btn-submit:hover {
+    background-color: #d99a1b;
+}
+
+/* Estilos de iconos */
+.contact-info p {
+    display: flex;
+    align-items: flex-start; /* Alinea el icono con la primera línea de texto */
+    gap: 10px; /* Espacio entre icono y texto */
+    margin: 10px 0;
+    font-size: 1rem;
+}
+
+.contact-info i {
+    color: #f0b429;
+    flex-shrink: 0; /* Evita que el icono se reduzca */
+    margin-top: 3px; /* Ajusta para alinearlo mejor visualmente */
+}
+
+.map-container {
+    margin-top: 20px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    .contact-container {
+        flex-direction: column;
+    }
+}
+
+
