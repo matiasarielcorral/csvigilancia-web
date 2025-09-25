@@ -1,4 +1,7 @@
 // Menú Hamburguesa (Responsive)
+    document.addEventListener('DOMContentLoaded', () => {
+    const hamburger = document.querySelector('.hamburger');
+    const navLinks = document.querySelector('.nav-links');
 
     hamburger.addEventListener('click', () => {
         navLinks.style.display = navLinks.style.display === 'flex' ? 'none' : 'flex';
@@ -12,6 +15,7 @@
             }
         });
     });
+});
 /* Cargar el header en las páginas
  fetch('header.html')
           .then(res => res.text())
