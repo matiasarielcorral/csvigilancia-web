@@ -8,10 +8,40 @@
     <link rel="icon" href="../assets/images/CS ICO.png">
     <!-- CSS -->
     <link rel="stylesheet" href="../assets/css/styles.css">
+    <!-- Font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 <body>
-    <!-- Navbar -->
-    <div id="header-container"></div>
+    <!-- Menu navibar -->
+    <header class="header">
+        <nav class="navbar">
+            <a href="index.html" class="logo">
+                <img src="../assets/images/CS LOGO LATERAL BLANCO 2.png" alt="Logo Seguridad">
+            </a>
+            <!--menu escritorio-->
+            <ul class="nav-links">
+                <a href="#inicio" class="nav-link">Inicio</a></li>
+                <a href="#servicios" class="nav-link">Tipos de Servicios</a></li>
+                <a href="#cotiza" class="nav-link">Contactanos</a></li>
+                <a href="#trabaja-con-nosotros" class="nav-link">Trabaja con nosotros</a></li>
+            </ul>
+        <!--hamburger para movil-->
+        <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+        </div>
+        </nav>
+        <!--Menu movil-->
+        <div class="mobile-menu" id="mobile-menu">
+        <ul>
+            <li><a href="#inicio" >Inicio</a></li>
+            <li><a href="#servicios">Tipos de Servicios</a></li>
+            <li><a href="#cotiza">Contactanos</a></li>
+            <li><a href="#trabaja-con-nosotros">Trabaja con nosotros</a></li>
+        </ul>
+    </div>
+ </header>
     <!-- Hero Banner -->
     <div class="hero">
     </div>
@@ -20,14 +50,113 @@
         <p>Protegiendo lo que más importa desde 2012</p>
         <a href="contacto.html" class="btn">Contáctanos</a>
     </div>
-        
-
-    <!-- Footer -->
+    <main class="content">
+<!-- Inicio -->
+    <section id="inicio" class="section">
+        <div class="section-content">
+            <h2>Inicio</h2>
+            <p>Bienvenido a nuestra página principal. Aquí encontrarás toda la información sobre nuestros servicios de seguridad.</p>
+        </div>
+    </section>
+    <section id="servicios" class="section">
+        <div class="section-content">
+            <h2>Tipos de guardias de seguridad</h2>
+            <p>Tenemos distintos tipos de personal de seguridad dependiendo de la industria</p>
+        </div>
+    </section>
+<!-- Cotiza Aqui -->
+    <section id="cotiza" class="section">
+        <div class="section-content">
+            <h2>Cotiza con nosotros</h2>
+            <p>Precios de acuerdo al mercado, seguridad personalizada. Utilizamos la tecnologia disponible para disminuir riesgos y para la supervision del servicio</p>
+        <!-- Columna izquierda del Formulario -->
+        <div class="contact-form">
+            <h2>Envíanos un mensaje</h2>
+            <form action="#" method="post">
+                <div class="form-group">
+                    <label for="name">Nombre completo</label>
+                    <input type="text" id="name" name="name" placeholder="Tu nombre" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Correo electrónico</label>
+                    <input type="email" id="email" name="email" placeholder="tu@email.com" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Mensaje</label>
+                    <textarea id="message" name="message" placeholder="Escribe tu mensaje..." rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn-submit">Enviar mensaje</button>
+            </form>
+        </div>
+         <!-- Columna derecha: Información -->
+        <div class="contact-info">
+            <h2>Información de contacto</h2>
+            <p><i class="fas fa-map-marker-alt"></i> Avda. Bernardo O’Higgins 949, oficina 606, Módulo 6, Santiago</p>
+            <p><i class="fas fa-phone-alt"></i> +56973300251  | +56968393369</p>
+            <p><i class="fas fa-envelope"></i> contacto@csvigilancia.cl | csvigilancia@gmail.com</p>
+            <p><i class="fas fa-clock"></i> Lunes a Viernes, 09:00 - 18:00 Hrs.</p>
+        </div>
+        </div>
+    </section>
+    <div class="map-container">
+        <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3330.1687698746095!2d-70.6482674253444!3d-33.4447795733898!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662c5a3f137c3b7%3A0x1cfbfb2c53a4c54!2sAv.%20Bernardo%20O&#39;Higgins%20949%2C%20Santiago%2C%20Regi%C3%B3n%20Metropolitana%2C%20Chile!5e0!3m2!1ses!2scl!4v1692715324112!5m2!1ses!2scl" 
+            width="100%" 
+            height="300" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+    </div>
+<!-- trabaja con nosotros -->
+    <section id="trabaja-con-nosotros" class="section">
+        <div class="section-content">
+           <h2>Trabaja con nosotros</h2>
+           <p>Adjunta tu curriculum y te contactaremos en caso de que una oferta laboral se ajuste a tu perfil.</p>
+    <!-- Columna izquierda: Formulario -->
+        <div class="contact-form">
+            <h2>Deja tus datos y adjunta tu curriculum</h2>
+            <form action="#" method="post">
+                <div class="form-group">
+                    <label for="name">Nombre completo</label>
+                    <input type="text" id="name" name="name" placeholder="Tu nombre" required>
+                </div>
+                <div class="form-group">
+                    <label for="comuna">Comuna</label>
+                    <input type="text" id="comuna" name="comuna" placeholder="comuna" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Correo electrónico</label>
+                    <input type="email" id="email" name="email" placeholder="tu@email.com" required>
+                </div>
+                <div>
+                    <label for="cv">Adjuntar Curriculum Vitae</label>
+                    <input type="file" id="cv" name="cv" accept=".pdf,.doc,.docx" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Mensaje</label>
+                    <textarea id="message" name="message" placeholder="Escribe tu mensaje..." rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn-submit">Enviar mensaje</button>
+            </form>
+        </div>
+        <!-- Columna derecha: Información -->
+        <div class="contact-info">
+            <h2>Información de contacto</h2>
+            <p><i class="fas fa-map-marker-alt"></i> Avda. Bernardo O’Higgins 949, oficina 606, Módulo 6, Santiago</p>
+            <p><i class="fas fa-phone-alt"></i> +56973300251  | +56968393369</p>
+            <p><i class="fas fa-envelope"></i> contacto@csvigilancia.cl | csvigilancia@gmail.com</p>
+            <p><i class="fas fa-clock"></i> Lunes a Viernes, 09:00 - 18:00 Hrs.</p>
+        </div>
+        </div>
+    </section>
+</main>
+<!-- Footer -->
     <footer class="footer">
         <p>&copy; 2025 Cs Vigilancia Privada. Todos los derechos reservados.</p>
     </footer>
-
-    <!-- JavaScript -->
-    <script src="../assets/js/main.js"></script>
+<!-- JavaScript -->
+<script src="../assets/js/main.js"></script>
 </body>
 </html>
